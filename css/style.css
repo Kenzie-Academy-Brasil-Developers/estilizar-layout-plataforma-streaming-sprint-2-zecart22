@@ -1,32 +1,32 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
 :root{
-  
+  --font: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  --background-color: #00002E;
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--background-color);
+		font-family: var(--font);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 /*TOPO*/
 	header.topo{
+		display: flex;
+		margin-right: auto;
+		margin-bottom: 15px;
 		
+	}
+
+	.topo figure figcaption{
+		display: none;
+	}
+
+	.figures{
+		display: none;
 	}
 
 /*RODAPÉ*/
@@ -34,5 +34,85 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		width: 100%;
+		text-align: center;
+	}
+
+	.pg-home header h2 {
+		color: #fff;
+		font-size: 1.5rem;
+		margin-bottom: 0 auto 35x auto;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.pg-home ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 65px;
+	}
+
+	.pg-home ul li{
+		width: 186px;
+		cursor: pointer;
+	}
+
+	.pg-home ul li figure figcaption{
+		display: none
+	}
+
+	.image_users{
+		width: 175px;
+		margin: 10px 0;
+	}
+
+	h3{
+		color: #fff;
+		font-family: var(--font);
+		size: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.image_users:hover{
+		border: 3px solid #fff;
+	}
+
+	.addPerfil img{
+		size: 140px;
+		margin-top: 4rem;
+}
+
+footer button {
+	border: 2px solid #fff;
+	background-color: var(--background);
+	padding: 10px;
+	font-size: 20px;
+	width: 250px;
+	color: #fff;
+	margin: 0 auto 30px auto;
+	cursor: pointer;
+
+}
+
+@media only screen and (win-width: 400px){
+	.pg-home ul {
+		width: 858px;
+		margin: 0 auto;
+		flex-direction: column-reverse;
 		
 	}
+
+	.image_users{
+		margin: 5px 0 auto auto;
+	}
+
+	footer button{
+		margin-top: 50px;
+	}
+
+}
+
+
