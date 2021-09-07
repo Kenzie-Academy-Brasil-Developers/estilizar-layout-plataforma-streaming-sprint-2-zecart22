@@ -33,13 +33,18 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*TOPO*/
 	header.topo{
 		display: flex;
-		margin-right: auto;
+		margin-right: auto auto;
 		margin-bottom: 15px;
 		
 	}
 
 	.topo figure figcaption{
 		display: none;
+	}
+
+	header .topo img{
+	width: 250px;
+	height: 100px;
 	}
 
 	.figures{
@@ -51,7 +56,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		width: 100%;
+		max-width: 858px;
 		text-align: center;
 	}
 
