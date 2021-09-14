@@ -69,6 +69,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	}
 
 	.pg-home ul {
+		max-width: 858px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
